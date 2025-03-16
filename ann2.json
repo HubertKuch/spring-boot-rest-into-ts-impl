@@ -1,0 +1,33 @@
+[
+  {
+    name: 'annotation',
+    children: [Object: null prototype] {
+      At: [Array],
+      typeName: [Array],
+      LBrace: [Array],
+      elementValuePairList: [Array],
+      RBrace: [Array]
+    },
+    location: {
+      startOffset: 5,
+      startLine: 2,
+      startColumn: 5,
+      endOffset: 102,
+      endLine: 2,
+      endColumn: 102
+    }
+  },
+  {
+    name: 'annotation',
+    children: [Object: null prototype] { At: [Array], typeName: [Array] },
+    location: {
+      startOffset: 151,
+      startLine: 5,
+      startColumn: 9,
+      endOffset: 161,
+      endLine: 5,
+      endColumn: 19
+    }
+  }
+]
+[]

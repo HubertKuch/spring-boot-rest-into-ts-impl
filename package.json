@@ -1,0 +1,22 @@
+{
+  "name": "java-controllers-to-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "flow-remove-types . -d dist/",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "java-parser": "^2.3.3",
+    "jsonpath-plus": "^10.3.0",
+    "object-delete-key": "^2.1.0"
+  },
+  "devDependencies": {
+    "flow-remove-types": "^2.265.2"
+  }
+}

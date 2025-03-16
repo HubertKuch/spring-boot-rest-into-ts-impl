@@ -1,0 +1,735 @@
+[
+  {
+    "name": "annotation",
+    "children": {
+      "At": [
+        {
+          "image": "@",
+          "startOffset": 5,
+          "endOffset": 5,
+          "startLine": 2,
+          "endLine": 2,
+          "startColumn": 5,
+          "endColumn": 5,
+          "tokenTypeIdx": 101,
+          "tokenType": {
+            "name": "At",
+            "PATTERN": "@",
+            "CATEGORIES": [
+              {
+                "name": "Separators",
+                "PATTERN": {},
+                "tokenTypeIdx": 11,
+                "CATEGORIES": [],
+                "categoryMatches": [
+                  101,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115
+                ],
+                "categoryMatchesMap": {
+                  "101": true,
+                  "103": true,
+                  "104": true,
+                  "105": true,
+                  "106": true,
+                  "107": true,
+                  "110": true,
+                  "111": true,
+                  "112": true,
+                  "113": true,
+                  "114": true,
+                  "115": true
+                },
+                "isParent": true,
+                "LABEL": "'Separators'"
+              }
+            ],
+            "tokenTypeIdx": 101,
+            "categoryMatches": [],
+            "categoryMatchesMap": {},
+            "isParent": false,
+            "LABEL": "'@'"
+          }
+        }
+      ],
+      "typeName": [
+        {
+          "name": "typeName",
+          "children": {
+            "Identifier": [
+              {
+                "image": "RestController",
+                "startOffset": 6,
+                "endOffset": 19,
+                "startLine": 2,
+                "endLine": 2,
+                "startColumn": 6,
+                "endColumn": 19,
+                "tokenTypeIdx": 3,
+                "tokenType": {
+                  "name": "Identifier",
+                  "PATTERN": {},
+                  "tokenTypeIdx": 3,
+                  "CATEGORIES": [],
+                  "categoryMatches": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    95,
+                    96,
+                    97
+                  ],
+                  "categoryMatchesMap": {
+                    "30": true,
+                    "31": true,
+                    "32": true,
+                    "33": true,
+                    "34": true,
+                    "35": true,
+                    "36": true,
+                    "37": true,
+                    "38": true,
+                    "39": true,
+                    "40": true,
+                    "41": true,
+                    "42": true,
+                    "43": true,
+                    "95": true,
+                    "96": true,
+                    "97": true
+                  },
+                  "isParent": true,
+                  "LINE_BREAKS": false,
+                  "START_CHARS_HINT": []
+                }
+              }
+            ]
+          },
+          "location": {
+            "startOffset": 6,
+            "startLine": 2,
+            "startColumn": 6,
+            "endOffset": 19,
+            "endLine": 2,
+            "endColumn": 19
+          }
+        }
+      ],
+      "LBrace": [
+        {
+          "image": "(",
+          "startOffset": 20,
+          "endOffset": 20,
+          "startLine": 2,
+          "endLine": 2,
+          "startColumn": 20,
+          "endColumn": 20,
+          "tokenTypeIdx": 110,
+          "tokenType": {
+            "name": "LBrace",
+            "PATTERN": "(",
+            "CATEGORIES": [
+              {
+                "name": "Separators",
+                "PATTERN": {},
+                "tokenTypeIdx": 11,
+                "CATEGORIES": [],
+                "categoryMatches": [
+                  101,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115
+                ],
+                "categoryMatchesMap": {
+                  "101": true,
+                  "103": true,
+                  "104": true,
+                  "105": true,
+                  "106": true,
+                  "107": true,
+                  "110": true,
+                  "111": true,
+                  "112": true,
+                  "113": true,
+                  "114": true,
+                  "115": true
+                },
+                "isParent": true,
+                "LABEL": "'Separators'"
+              }
+            ],
+            "tokenTypeIdx": 110,
+            "categoryMatches": [],
+            "categoryMatchesMap": {},
+            "isParent": false,
+            "LABEL": "'('"
+          }
+        }
+      ],
+      "elementValuePairList": [
+        {
+          "name": "elementValuePairList",
+          "children": {
+            "elementValuePair": [
+              {
+                "name": "elementValuePair",
+                "children": {
+                  "Identifier": [
+                    {
+                      "image": "something",
+                      "startOffset": 21,
+                      "endOffset": 29,
+                      "startLine": 2,
+                      "endLine": 2,
+                      "startColumn": 21,
+                      "endColumn": 29,
+                      "tokenTypeIdx": 3,
+                      "tokenType": {
+                        "name": "Identifier",
+                        "PATTERN": {},
+                        "tokenTypeIdx": 3,
+                        "CATEGORIES": [],
+                        "categoryMatches": [
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          95,
+                          96,
+                          97
+                        ],
+                        "categoryMatchesMap": {
+                          "30": true,
+                          "31": true,
+                          "32": true,
+                          "33": true,
+                          "34": true,
+                          "35": true,
+                          "36": true,
+                          "37": true,
+                          "38": true,
+                          "39": true,
+                          "40": true,
+                          "41": true,
+                          "42": true,
+                          "43": true,
+                          "95": true,
+                          "96": true,
+                          "97": true
+                        },
+                        "isParent": true,
+                        "LINE_BREAKS": false,
+                        "START_CHARS_HINT": []
+                      }
+                    }
+                  ],
+                  "Equals": [
+                    {
+                      "image": "=",
+                      "startOffset": 30,
+                      "endOffset": 30,
+                      "startLine": 2,
+                      "endLine": 2,
+                      "startColumn": 30,
+                      "endColumn": 30,
+                      "tokenTypeIdx": 127,
+                      "tokenType": {
+                        "name": "Equals",
+                        "PATTERN": "=",
+                        "CATEGORIES": [
+                          {
+                            "name": "BinaryOperator",
+                            "PATTERN": {},
+                            "tokenTypeIdx": 7,
+                            "CATEGORIES": [],
+                            "categoryMatches": [
+                              94,
+                              119,
+                              121,
+                              122,
+                              125,
+                              126,
+                              127,
+                              129,
+                              131,
+                              132,
+                              134,
+                              136,
+                              137,
+                              138,
+                              140,
+                              142,
+                              144,
+                              146
+                            ],
+                            "categoryMatchesMap": {
+                              "94": true,
+                              "119": true,
+                              "121": true,
+                              "122": true,
+                              "125": true,
+                              "126": true,
+                              "127": true,
+                              "129": true,
+                              "131": true,
+                              "132": true,
+                              "134": true,
+                              "136": true,
+                              "137": true,
+                              "138": true,
+                              "140": true,
+                              "142": true,
+                              "144": true,
+                              "146": true
+                            },
+                            "isParent": true,
+                            "LABEL": "'BinaryOperator'"
+                          },
+                          {
+                            "name": "AssignmentOperator",
+                            "PATTERN": {},
+                            "tokenTypeIdx": 6,
+                            "CATEGORIES": [],
+                            "categoryMatches": [
+                              120,
+                              123,
+                              124,
+                              127,
+                              128,
+                              130,
+                              133,
+                              135,
+                              139,
+                              141,
+                              143,
+                              145
+                            ],
+                            "categoryMatchesMap": {
+                              "120": true,
+                              "123": true,
+                              "124": true,
+                              "127": true,
+                              "128": true,
+                              "130": true,
+                              "133": true,
+                              "135": true,
+                              "139": true,
+                              "141": true,
+                              "143": true,
+                              "145": true
+                            },
+                            "isParent": true,
+                            "LABEL": "'AssignmentOperator'"
+                          }
+                        ],
+                        "tokenTypeIdx": 127,
+                        "categoryMatches": [],
+                        "categoryMatchesMap": {},
+                        "isParent": false,
+                        "LABEL": "'='"
+                      }
+                    }
+                  ],
+                  "elementValue": [
+                    {
+                      "name": "elementValue",
+                      "children": {
+                        "conditionalExpression": [
+                          {
+                            "name": "conditionalExpression",
+                            "children": {
+                              "binaryExpression": [
+                                {
+                                  "name": "binaryExpression",
+                                  "children": {
+                                    "unaryExpression": [
+                                      {
+                                        "name": "unaryExpression",
+                                        "children": {
+                                          "primary": [
+                                            {
+                                              "name": "primary",
+                                              "children": {
+                                                "primaryPrefix": [
+                                                  {
+                                                    "name": "primaryPrefix",
+                                                    "children": {
+                                                      "literal": [
+                                                        {
+                                                          "name": "literal",
+                                                          "children": {
+                                                            "StringLiteral": [
+                                                              {
+                                                                "image": "\"test\"",
+                                                                "startOffset": 31,
+                                                                "endOffset": 36,
+                                                                "startLine": 2,
+                                                                "endLine": 2,
+                                                                "startColumn": 31,
+                                                                "endColumn": 36,
+                                                                "tokenTypeIdx": 25,
+                                                                "tokenType": {
+                                                                  "name": "StringLiteral",
+                                                                  "PATTERN": {},
+                                                                  "tokenTypeIdx": 25,
+                                                                  "CATEGORIES": [],
+                                                                  "categoryMatches": [],
+                                                                  "categoryMatchesMap": {},
+                                                                  "isParent": false,
+                                                                  "LABEL": "'StringLiteral'"
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          "location": {
+                                                            "startOffset": 31,
+                                                            "startLine": 2,
+                                                            "startColumn": 31,
+                                                            "endOffset": 36,
+                                                            "endLine": 2,
+                                                            "endColumn": 36
+                                                          }
+                                                        }
+                                                      ]
+                                                    },
+                                                    "location": {
+                                                      "startOffset": 31,
+                                                      "startLine": 2,
+                                                      "startColumn": 31,
+                                                      "endOffset": 36,
+                                                      "endLine": 2,
+                                                      "endColumn": 36
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              "location": {
+                                                "startOffset": 31,
+                                                "startLine": 2,
+                                                "startColumn": 31,
+                                                "endOffset": 36,
+                                                "endLine": 2,
+                                                "endColumn": 36
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        "location": {
+                                          "startOffset": 31,
+                                          "startLine": 2,
+                                          "startColumn": 31,
+                                          "endOffset": 36,
+                                          "endLine": 2,
+                                          "endColumn": 36
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "location": {
+                                    "startOffset": 31,
+                                    "startLine": 2,
+                                    "startColumn": 31,
+                                    "endOffset": 36,
+                                    "endLine": 2,
+                                    "endColumn": 36
+                                  }
+                                }
+                              ]
+                            },
+                            "location": {
+                              "startOffset": 31,
+                              "startLine": 2,
+                              "startColumn": 31,
+                              "endOffset": 36,
+                              "endLine": 2,
+                              "endColumn": 36
+                            }
+                          }
+                        ]
+                      },
+                      "location": {
+                        "startOffset": 31,
+                        "startLine": 2,
+                        "startColumn": 31,
+                        "endOffset": 36,
+                        "endLine": 2,
+                        "endColumn": 36
+                      }
+                    }
+                  ]
+                },
+                "location": {
+                  "startOffset": 21,
+                  "startLine": 2,
+                  "startColumn": 21,
+                  "endOffset": 36,
+                  "endLine": 2,
+                  "endColumn": 36
+                }
+              }
+            ]
+          },
+          "location": {
+            "startOffset": 21,
+            "startLine": 2,
+            "startColumn": 21,
+            "endOffset": 36,
+            "endLine": 2,
+            "endColumn": 36
+          }
+        }
+      ],
+      "RBrace": [
+        {
+          "image": ")",
+          "startOffset": 37,
+          "endOffset": 37,
+          "startLine": 2,
+          "endLine": 2,
+          "startColumn": 37,
+          "endColumn": 37,
+          "tokenTypeIdx": 111,
+          "tokenType": {
+            "name": "RBrace",
+            "PATTERN": ")",
+            "CATEGORIES": [
+              {
+                "name": "Separators",
+                "PATTERN": {},
+                "tokenTypeIdx": 11,
+                "CATEGORIES": [],
+                "categoryMatches": [
+                  101,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115
+                ],
+                "categoryMatchesMap": {
+                  "101": true,
+                  "103": true,
+                  "104": true,
+                  "105": true,
+                  "106": true,
+                  "107": true,
+                  "110": true,
+                  "111": true,
+                  "112": true,
+                  "113": true,
+                  "114": true,
+                  "115": true
+                },
+                "isParent": true,
+                "LABEL": "'Separators'"
+              }
+            ],
+            "tokenTypeIdx": 111,
+            "categoryMatches": [],
+            "categoryMatchesMap": {},
+            "isParent": false,
+            "LABEL": "')'"
+          }
+        }
+      ]
+    },
+    "location": {
+      "startOffset": 5,
+      "startLine": 2,
+      "startColumn": 5,
+      "endOffset": 37,
+      "endLine": 2,
+      "endColumn": 37
+    }
+  },
+  {
+    "name": "annotation",
+    "children": {
+      "At": [
+        {
+          "image": "@",
+          "startOffset": 86,
+          "endOffset": 86,
+          "startLine": 5,
+          "endLine": 5,
+          "startColumn": 9,
+          "endColumn": 9,
+          "tokenTypeIdx": 101,
+          "tokenType": {
+            "name": "At",
+            "PATTERN": "@",
+            "CATEGORIES": [
+              {
+                "name": "Separators",
+                "PATTERN": {},
+                "tokenTypeIdx": 11,
+                "CATEGORIES": [],
+                "categoryMatches": [
+                  101,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115
+                ],
+                "categoryMatchesMap": {
+                  "101": true,
+                  "103": true,
+                  "104": true,
+                  "105": true,
+                  "106": true,
+                  "107": true,
+                  "110": true,
+                  "111": true,
+                  "112": true,
+                  "113": true,
+                  "114": true,
+                  "115": true
+                },
+                "isParent": true,
+                "LABEL": "'Separators'"
+              }
+            ],
+            "tokenTypeIdx": 101,
+            "categoryMatches": [],
+            "categoryMatchesMap": {},
+            "isParent": false,
+            "LABEL": "'@'"
+          }
+        }
+      ],
+      "typeName": [
+        {
+          "name": "typeName",
+          "children": {
+            "Identifier": [
+              {
+                "image": "GetMapping",
+                "startOffset": 87,
+                "endOffset": 96,
+                "startLine": 5,
+                "endLine": 5,
+                "startColumn": 10,
+                "endColumn": 19,
+                "tokenTypeIdx": 3,
+                "tokenType": {
+                  "name": "Identifier",
+                  "PATTERN": {},
+                  "tokenTypeIdx": 3,
+                  "CATEGORIES": [],
+                  "categoryMatches": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    95,
+                    96,
+                    97
+                  ],
+                  "categoryMatchesMap": {
+                    "30": true,
+                    "31": true,
+                    "32": true,
+                    "33": true,
+                    "34": true,
+                    "35": true,
+                    "36": true,
+                    "37": true,
+                    "38": true,
+                    "39": true,
+                    "40": true,
+                    "41": true,
+                    "42": true,
+                    "43": true,
+                    "95": true,
+                    "96": true,
+                    "97": true
+                  },
+                  "isParent": true,
+                  "LINE_BREAKS": false,
+                  "START_CHARS_HINT": []
+                }
+              }
+            ]
+          },
+          "location": {
+            "startOffset": 87,
+            "startLine": 5,
+            "startColumn": 10,
+            "endOffset": 96,
+            "endLine": 5,
+            "endColumn": 19
+          }
+        }
+      ]
+    },
+    "location": {
+      "startOffset": 86,
+      "startLine": 5,
+      "startColumn": 9,
+      "endOffset": 96,
+      "endLine": 5,
+      "endColumn": 19
+    }
+  }
+]
