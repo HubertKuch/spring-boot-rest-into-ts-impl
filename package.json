@@ -12,6 +12,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@types/jasmine": "^5.1.7",
+    "@types/jasmine-node": "^1.14.36",
     "jasmine": "^5.6.0",
     "jasmine-node": "^3.0.0",
     "java-parser": "^2.3.3",
