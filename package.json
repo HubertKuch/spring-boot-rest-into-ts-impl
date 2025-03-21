@@ -2,9 +2,9 @@
   "name": "java-controllers-to-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "build": "flow-remove-types . -d dist/",
+    "build": "",
     "start": "node dist/index.js"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "object-delete-key": "^2.1.0"
   },
   "devDependencies": {
-    "flow-remove-types": "^2.265.2"
+    "@babel/preset-typescript": "^7.26.0",
+    "typescript": "^5.8.2"
   }
 }
