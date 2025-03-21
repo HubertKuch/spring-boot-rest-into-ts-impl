@@ -2,16 +2,18 @@
   "name": "java-controllers-to-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "",
-    "start": "node dist/index.js"
+    "start": "node build/index.js",
+    "test": "jasmine"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "jasmine": "^5.6.0",
+    "jasmine-node": "^3.0.0",
     "java-parser": "^2.3.3",
     "jsonpath-plus": "^10.3.0",
     "object-delete-key": "^2.1.0"
