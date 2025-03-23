@@ -6,18 +6,34 @@ export enum LiteralType {
     DecimalLiteral = "DecimalLiteral"
 }
 
-export interface AnnotationPropertyNode {
-    name: String;
-    value: String | Number | Boolean;
+interface Nameable {
+    name: string;
+}
+
+interface Valuable {
+    value: string | Number | Boolean;
+}
+
+interface HasAnnotations {
+    annotations: AnnotationNode[];
+}
+
+export interface AnnotationPropertyNode extends Valuable, Nameable {
     literalType: LiteralType;
 }
 
-export interface AnnotationNode {
-    name: String;
+export interface AnnotationNode extends Nameable {
     properties: AnnotationPropertyNode[];
 }
 
-export interface ClassNode {
-    name: String;
-    annotations: AnnotationNode[];
+interface MethodPropertyNode extends Nameable, Valuable {
+}
+
+export interface MethodNode extends Nameable, HasAnnotations {
+    properties: MethodPropertyNode[];
+    returns: string;
+}
+
+export interface ClassNode extends Nameable, HasAnnotations {
+    methods: MethodNode[];
 }

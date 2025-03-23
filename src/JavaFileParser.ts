@@ -1,12 +1,12 @@
 import {
     AnnotationCstNode,
     ClassDeclarationCstNode,
-    CompilationUnitCstNode,
-    ElementValuePairCstNode,
+    CompilationUnitCstNode, CstNode,
+    ElementValuePairCstNode, MethodDeclarationCstNode,
     parse
 } from "java-parser";
 import {JSONPath} from "jsonpath-plus";
-import {AnnotationNode, AnnotationPropertyNode, ClassNode, LiteralType} from "./types";
+import {AnnotationNode, AnnotationPropertyNode, ClassNode, LiteralType, MethodNode} from "./types";
 
 export class JavaFileParser {
     private readonly cst: CompilationUnitCstNode;
@@ -24,29 +24,67 @@ export class JavaFileParser {
 
 
         return classNodes.map((classNode: ClassDeclarationCstNode) => {
-            const className: String = JSONPath({
+            const className: string = JSONPath({
                 path: "$..normalClassDeclaration[0]..typeIdentifier[0]..image",
                 json: classNode
             })[0];
 
-            return {name: className, annotations: this.getAnnotationsFromClassNode(classNode)}
+            return {
+                name: className,
+                annotations: this.getAnnotationFromClassModifier(classNode),
+                methods: this.getMethodsFromClassNode(classNode)
+            }
         })
     }
 
-    private getAnnotationsFromClassNode(classNode: ClassDeclarationCstNode): AnnotationNode[] {
-        return JSONPath({path: "$..classModifier[0]..[?(@.name=='annotation')]", json: classNode})
+    private getMethodsFromClassNode(classNode: ClassDeclarationCstNode): MethodNode[] {
+        return JSONPath({path: "$..classBodyDeclaration[0]..methodDeclaration", json: classNode})
+            .map((methodNode: MethodDeclarationCstNode) => {
+                const methodName = JSONPath({
+                    path: "$..methodHeader..methodDeclarator..Identifier..image",
+                    json: methodNode
+                })[0];
+
+                const annotations = this.getAnnotationFromMethodModifier(JSONPath({
+                    json: methodNode,
+                    path: "$..methodModifier"
+                }));
+
+                const properties = this.getProperties(JSONPath({
+                    path: "$..methodHeader..methodDeclarator..formalParameterList",
+                    json: methodNode
+                }));
+
+                const returns = JSONPath({path: "$..unannType..image", json: methodNode})[0];
+
+                return {name: methodName, returns, annotations, properties};
+            });
+    }
+
+    private getAnnotationFromClassModifier(node: CstNode): AnnotationNode[] {
+        return JSONPath({path: "$..classModifier[0]..[?(@.name=='annotation')]", json: node})
             .map((annNode: AnnotationCstNode) => {
                 const annName = JSONPath({path: "$..typeName..image", json: annNode})[0];
-                const properties = this.getAnnotationProperties(annNode);
+                const properties = this.getProperties(annNode);
 
                 return {name: annName, properties};
             })
     }
 
-    private getAnnotationProperties(annotationNode: AnnotationCstNode): AnnotationPropertyNode[] {
+    private getAnnotationFromMethodModifier(node: CstNode): AnnotationNode[] {
+        return JSONPath({path: "$..[?(@.name=='annotation')]", json: node})
+            .map((annNode: AnnotationCstNode) => {
+                const annName = JSONPath({path: "$..typeName..image", json: annNode})[0];
+                const properties = this.getProperties(annNode);
+
+                return {name: annName, properties};
+            })
+    }
+
+    private getProperties(node: CstNode): AnnotationPropertyNode[] {
         return JSONPath({
             path: "$..elementValuePair..[?(@.name=='elementValuePair')]",
-            json: annotationNode
+            json: node
         }).map((property: ElementValuePairCstNode) => {
             const name = JSONPath({path: "$..Identifier..image", json: property})[0];
             const rawLiteral: string = JSONPath({path: "$..literal..tokenType..name", json: property})[0];

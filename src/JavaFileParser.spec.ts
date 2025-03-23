@@ -46,4 +46,14 @@ describe('JavaFileParser', () => {
         expect(classNodes[0].annotations[0].properties[0].name).toEqual("something");
         expect(classNodes[0].annotations[0].properties).toEqual(CONTROLLER_CLASS_ANNOTATION_PROPERTIES);
     });
+
+    it('should get all methods from class when has', () => {
+        const classNodes = sampleParser.getAllClasses();
+        const methods = classNodes[0].methods;
+
+        expect(methods.length).toEqual(1);
+        expect(methods[0].name).toEqual("get");
+        expect(methods[0].returns).toEqual("Response");
+        expect(methods[0].annotations.length).toEqual(1);
+    });
 });
